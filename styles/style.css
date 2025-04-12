@@ -10,7 +10,6 @@
   .header_menu {
     display: flex;
     justify-self: center;
-  
   }
   
   .menu_links {
@@ -23,12 +22,12 @@
   .link_list {
     font-size: 18px;
     font-weight: 400;
-    text-underline-offset: 4px; 
+    text-underline-offset: 4px;
     text-decoration: underline;
   }
   
   .main_link_marker {
-    list-style-type: none; 
+    list-style-type: none;
     text-decoration: none;
   }
   
@@ -47,7 +46,7 @@
     line-height: 24.3px;
     font-family: "Raleway", sans-serif;
     list-style-type: none;
-    font-style: normal;  
+    font-style: normal;
   }
   
   
@@ -59,7 +58,7 @@
     text-transform: uppercase;
     z-index: 0;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
   }
   
   .overlay {
@@ -74,22 +73,23 @@
     z-index: -1;
   }
   
-  .cover_title { 
+  .cover_title {
     position: relative;
     display: flex;
     flex-direction: column;
     padding: 165px 50px 106px;
-    gap: 20px;   
-  } 
-   
-  .cover_title span { 
-    font-size: 100px; 
-    font-weight: 700;  
-    line-height: 115%;  
+    gap: 20px;
+  }
+  
+  .cover_title span {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115%;
   }
   
   .text_cover {
     display: block;
+    letter-spacing: 0.3em;
   }
   
   .text_center {
@@ -100,16 +100,12 @@
     text-align: right;
   }
   
-  .text_cover { 
-    letter-spacing: 0.3em;
-  }
-  
   .text_cover .no_letter_spacing {
-    letter-spacing: 0px; 
+    letter-spacing: 0px;
   }
   
   .text_cover .letter_spacing {
-    letter-spacing: 0.3em; 
+    letter-spacing: 0.3em;
   }
   
   .cover_description {
@@ -140,7 +136,7 @@
     text-align: center;
   }
   
-  .title_lots {
+  .lots__heading {
     padding-top: 179px;
     padding-bottom: 27px;
     padding-left: 64px;
@@ -150,59 +146,82 @@
     text-transform: uppercase;
   }
   
-  .container_lots {
+  .lots__card-list {
     display: flex;
     flex-wrap: wrap;
-    list-style-type: none;
     gap: 25px;
-    justify-content: flex-start;
-    padding: 0; 
-    margin: 0 auto;
-    margin-left: 24px;   
+    padding: 0;
+    margin: 0 24px;
+    list-style: none;
   }
   
-  .card_lots a { 
-    text-decoration: none; 
-  }
-  
-  .card_lots {
-    max-width: 334px;
+  .lots__card-list-item {
+    width: 334px;
     min-height: 596px;
-    flex-grow: 1;
+  }
+  
+  .card-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
   }
   
   .card {
     position: relative;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    z-index: 1;
-    padding: 51px 40px 48px;
     justify-content: space-between;
+    height: 100%;
+    padding: 51px 40px 48px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 0;
   }
   
-  .card_about_cinema {
-    background-image: url(./../images/card-lot-01.jpg);
+  .card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
   }
   
-  .card_about_book {
-    background-image: url(./../images/card-lot-02.jpg);
+  .card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
   }
   
-  .card_about_picture {
-    background-image: url(./../images/card-lot-03.jpg);
+  .card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
   }
   
-  .card_title {
+  .card__title,
+  .card__text {
+    position: relative;
+    z-index: 1;
     color: white;
+  }
+  
+  .card__title {
     font-size: 22px;
     font-weight: 700;
     line-height: 120%;
-    text-decoration-line: underline;
     text-transform: uppercase;
+    text-decoration: underline;
+  }
+  
+  .card__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  
+  .lots__look-more-link {
+    display: block;
+    text-underline-offset: 3px;
+    padding-top: 30px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.48px;
+    margin-left: 64px;
   }
   
   .link_lots { 
@@ -266,6 +285,7 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 46.96px;
+    text-transform: uppercase;
   }
   
   .about_text {
@@ -275,14 +295,8 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-  }
-  
-  .text_up {
-    padding-top: 76px;
-  }
-  
-  .text_down {
-    padding-top: 25px;
+    padding-top: 100px;
+    gap: 20px;
   }
   
   .footer {
@@ -315,7 +329,7 @@
     line-height: normal;
   }
   
-  .footer_main {
+  .footer__menu-link_active {
     text-decoration: none;
   }
   
