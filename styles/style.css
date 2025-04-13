@@ -1,54 +1,72 @@
 /* место для вашего кода */
 /* я сделал */
-.header {
-    display: grid;
-    grid-template-columns: 1fr min-content 1fr;
-    align-items: center;
-    padding: 96px 24px 92px 24px;
-  }
-  
-  .header_menu {
-    display: flex;
-    justify-self: center;
-  }
-  
-  .menu_links {
-    display: flex;
-    gap: 32px;
-    list-style-type: circle;
-    padding-right: 7px;
-  }
-  
-  .link_list {
-    font-size: 18px;
-    font-weight: 400;
-    text-underline-offset: 4px;
-    text-decoration: underline;
-  }
-  
-  .main_link_marker {
+.header { 
+    display: grid; 
+    grid-template-columns: 1fr min-content 1fr; 
+    align-items: center; 
+    padding: 96px 50px 92px 50px; 
+  } 
+
+  .header_menu { 
+    display: flex; 
+    justify-self: start; 
+  } 
+
+   
+  .header__links-list { 
+    display: flex; 
+    gap: 32px; 
+    list-style-type: circle; 
+    padding-right: 7px; 
+  } 
+
+  .header__links-list-item { 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-underline-offset: 4px;  
+  } 
+
+  .header__links-list-item_no-bullit {
     list-style-type: none;
-    text-decoration: none;
   }
-  
-  .link_main {
-    text-decoration: none;
-  }
-  
-  .header_logo {
-    width: 148px;
-    height: 105px;
-  }
-  
+
+  .main_link_marker { 
+    list-style-type: none;  
+    text-decoration: none; 
+  } 
+
+  .header__link { 
+    text-decoration: underline;  
+  } 
+
+  .header__link_active { 
+    text-decoration: none; 
+  } 
+
+  .header_logo { 
+    width: 148px; 
+    height: 105px; 
+  } 
+
   .address {
-    padding-left: 184px;
     font-size: 18px;
     line-height: 24.3px;
     font-family: "Raleway", sans-serif;
-    list-style-type: none;
     font-style: normal;
   }
   
+  .address__link {
+    color: inherit;
+  }
+  
+  .address__text {
+    margin: 0;
+    max-width: 240px;
+  }
+  
+  .header__address {
+    padding-left: 184px;
+  }
   
   .cover {
     position: relative;
@@ -295,50 +313,60 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    padding-top: 100px;
-    gap: 20px;
-  }
-  
-  .footer {
+    padding-top: 76px;
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    padding: 180px 50px 88px;
-    gap: 140px;
-    align-items: flex-start;
+    grid-gap: 24px;
   }
-  
-  .footer_address {
-    font-style: normal;
-    padding-left: 0px; 
+    
+  .footer { 
+    display: grid; 
+    grid-template-columns: auto 1fr auto; 
+    padding: 180px 50px 88px; 
+    gap: 140px; 
+    align-items: flex-start; 
+  } 
+
+   
+
+  .footer__address {
+    padding: 0;
+    max-width: 265px;
   }
-  
-  .footer_menu {
-    padding-left: 35px;
-  }
-  
-  .footer_menu_links {
-    list-style-type: none;
-    text-underline-offset: 3px;
-  }
-  
-  .footer_links {
-    color: black;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: normal;
-  }
-  
-  .footer__menu-link_active {
-    text-decoration: none;
-  }
-  
-  .images_footer {
-    width: 48px;
-    height: 48px;
-  }
-  
-  .footer_images {
-    display: flex;
-    gap: 48px;
-  }
+
+  .footer__menu-list { 
+    list-style-type: none; 
+    text-underline-offset: 4px; 
+  } 
+
+   
+
+  .footer__menu-list { 
+    color: black; 
+    text-align: center; 
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: normal; 
+  } 
+
+   
+
+  .footer__menu-link { 
+    text-decoration: underline;  
+  } 
+
+  .footer__menu-link_active { 
+    text-decoration: none; 
+  } 
+   
+
+  .images_footer { 
+    width: 48px; 
+    height: 48px; 
+  } 
+
+   
+
+  .footer_images { 
+    display: flex; 
+    gap: 48px; 
+  } 
